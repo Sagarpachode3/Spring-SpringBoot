@@ -1,0 +1,9 @@
+package com.psagar3codes.beans;
+
+public class Student {
+
+	private int rollNo;
+	private String name;
+	private Address address;
+
+}

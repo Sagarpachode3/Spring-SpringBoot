@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean class="com.psagar3codes.beans.Address" id="adrId">
+    <constructor-arg value="houseNo"/>
+    <constructor-arg value="city"/>
+    <constructor-arg value="pinCode"/>
+    </bean>
+    
+    <bean class="com.psagar3codes.beans.Student" id="stdId">
+    <property name="rollNo" value="33"/>
+    <property name="name" value="Sagar"/>
+    <property name="address" ref="adrId"/>
+    </bean>
+
+</beans>
